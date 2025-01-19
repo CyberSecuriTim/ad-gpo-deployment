@@ -24,7 +24,7 @@ This tutorial outlines the configuration and deployment of group policy objects 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
+- Step 1: Configure Remote Desktop Access for Non-administrative users on the Domain client VM
 - Step 2
 - Step 3
 - Step 4
