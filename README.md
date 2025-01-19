@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This tutorial outlines the configuration and deployment of group policy objects within an Active Directory domain conisting of virtual machines hosted in Azure.<br />
 
 
 <h2>Video Demonstration</h2>
