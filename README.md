@@ -341,9 +341,9 @@
     was created by the Powershell script for your lab)😂. I'm sure whoever it was sends their kindest regards. </h2>
 <p>
 
-  - Now you can keep experimenting within your Active Directory Domain at your own discretion using your Domain Client and Domain Controller. In fact, you could always take a look at 
-    the lab I did for building a basic intuition for DNS (Domain Name System) which uses this same AD infrastructure that we have built in these previous two labs.
-
-      - It is linked right [here](https://github.com/CyberSecuriTim/dns-overview).
+  - Now you can keep experimenting within your Active Directory Domain at your own discretion using your Domain Client and Domain Controller.
+  - In fact, feel free to take a look at the lab I did for building a basic intuition for DNS (Domain Name System) which uses this same AD infrastructure that we have built in these 
+     previous two labs.
+     - It is linked right [here](https://github.com/CyberSecuriTim/dns-overview).
 </p>
 
