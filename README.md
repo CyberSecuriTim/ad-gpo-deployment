@@ -277,7 +277,7 @@
 - Run the command prompt or powershell as an administrator and enter the command "gpupdate /force" to adminstratively "force" the newly edited GPO to be applied to the client VM.
 - Also run the command "gpresult /r" to display the GPO's that have been applied to this Domain Client
 
-![image](https://github.com/user-attachments/assets/15cd3634-b405-44ad-8cf0-42f394c618e8)
+![image](https://github.com/user-attachments/assets/fa8fd839-ede3-49a8-957f-54685b620853)
 
 
 
