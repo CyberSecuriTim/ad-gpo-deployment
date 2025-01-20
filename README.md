@@ -219,3 +219,12 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------
 <h2> STEP 2: Configure a Password Lockout Policy by Deploying a Group Policy Object. </h2>
+
+<p> 
+
+<h4> OPTIONAL STEP: Attempt to login to the Domain Client with any of the created users but use the incorrect password. </h4>
+
+![image](https://github.com/user-attachments/assets/6e6fbaa8-eb6f-4861-833a-14d7acaa7935)
+
+ - Are you getting bored tim  
+</p>
