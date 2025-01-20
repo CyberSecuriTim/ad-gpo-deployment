@@ -36,6 +36,9 @@
 
 <p> 
 
-  - Turn on your Domain Controller VM if it was turned off at the end of the previous lab and establish an remote desktop connection to it using its public IP address.
-  
+  - Turn on your Domain Controller VM if it was turned off at the end of the previous lab and establish a remote desktop connection to it using its public IP address.
+     - Log in as one of the accounts from the previous lab that has Domain Admin privileges.
+   
+  ![image](https://github.com/user-attachments/assets/1971c08f-e7c2-4e48-bc0a-cdb75052df00)
+
 </p>
