@@ -258,7 +258,13 @@
 - Within the "Group Policy Management Editor":
   - Navigate to Computer Configuration > Windows Settins > Security Settings > Account Lockout Policy
   - Right Click "Account Lockout Threshold" and select Properties.
-
+  - Set the lockout threshold to a reasonable number
+  - Click "Apply" 
   ![image](https://github.com/user-attachments/assets/1fd7b3b0-53a1-48b9-94ef-9653c9d752a4)
 
+   - Notice that the other Account Lockout Policy Settings will automatically be assigned suggested values.
+       - The suggested values are perfectly fine but feel free to modify them at your discretion.
+
+![image](https://github.com/user-attachments/assets/9affaa81-1227-4fb9-9ee3-e35771a23c57)
+     
 </p>
