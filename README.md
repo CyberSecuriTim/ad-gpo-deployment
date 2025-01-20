@@ -90,7 +90,8 @@
 
  - Here is the script I ran in powershell (as an administrator) replacing the placeholder values with my actual domain and OU information.
 
-![image](https://github.com/user-attachments/assets/9de05be3-0eaf-47f0-b601-49f0c18b35a1)
+![image](https://github.com/user-attachments/assets/dca0f989-2ac6-4787-8dad-314d2306c7e3)
+
 
 - Explaining each variable and function in the script:
   - $OU: The distinguished name (DN) of the organizational unit containing the users.
