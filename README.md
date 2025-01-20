@@ -85,6 +85,8 @@
 
 
 - Open the "Group Policy Management" console 
- 
+   - Right click the Organizational Unit where all the domain client computers reside (_CLIENTS) and create the group policy object and link it here. 
+
+![image](https://github.com/user-attachments/assets/e62fe5fd-b13e-49bb-a8c9-e902c1c398bf)
 
 </p>
