@@ -251,8 +251,14 @@
        - Doing so will ensure consistent application across our entire domain and we will not risk it overriding a competing custom GPO that we would have created.
   
 - Right click the "Default Domain Policy" and select Edit
+  - This will open the "Group Policy Management Editor" 
 
 ![image](https://github.com/user-attachments/assets/282fdbab-fb3a-4047-a5bc-e734b0805b4a)
 
+- Within the "Group Policy Management Editor":
+  - Navigate to Computer Configuration > Windows Settins > Security Settings > Account Lockout Policy
+  - Right Click "Account Lockout Threshold" and select Properties.
+
+  ![image](https://github.com/user-attachments/assets/1fd7b3b0-53a1-48b9-94ef-9653c9d752a4)
 
 </p>
