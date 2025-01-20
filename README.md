@@ -206,7 +206,8 @@
 
 ![image](https://github.com/user-attachments/assets/7600ad4b-4b9a-47fa-b163-58ab4219342d)
 
-
+- You can also run the command "gpresult /r" in the command prompt or powershell with admin privileges to see the applied GPO's on 
+  this client 
 ![image](https://github.com/user-attachments/assets/358cf931-c0e0-4a3c-aa14-32f36d303aad)
 
 </p>
