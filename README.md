@@ -34,7 +34,7 @@
 
 <h2>Deployment and Configuration Steps</h2>
 
-<h2> STEP 0: Create multiple Non-Admin Users and Add These Users to the Active Directory Domain.</h2>
+<h2> STEP 0: Create multiple Non-Admin Users and Add These Users to the Active Directory Domain using Powershell ISE (Integrated Scripting Environment).</h2>
 
 <p> 
 
