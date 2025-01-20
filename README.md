@@ -241,7 +241,7 @@
 ![image](https://github.com/user-attachments/assets/2a7c2a0c-50dc-4c0b-93b4-530eb5008aa6)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<h3> STEP 2.2: Open the "Group Policy Management" console and edit the Default Domain Policy To configure the Account Lockout Policy within this GPO. </h3>
+<h3> STEP 2.2: Open the "Group Policy Management" console and edit the Default Domain Policy To configure the Account Lockout Policy within this Group Policy Object (GPO). </h3>
 
  - NOTE: It is more efficient to simply edit the "Default Domain Policy" as opposed to creating a new GPO for multiple reasons: 
    - It is automatically linked to our created domain (account lockout configurations and other authentication based events are domain wide operations)
@@ -250,7 +250,9 @@
    - It takes precedence over any created Group Policy Objects by default...it is the default domain policy after all(very appropriately named😉)
        - Doing so will ensure consistent application across our entire domain and we will not risk it overriding a competing custom GPO that we would have created.
   
-- 
+- Right click the "Default Domain Policy" and select Edit
+
+![image](https://github.com/user-attachments/assets/282fdbab-fb3a-4047-a5bc-e734b0805b4a)
 
 
 </p>
