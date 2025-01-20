@@ -228,7 +228,8 @@
 
 ![image](https://github.com/user-attachments/assets/6e6fbaa8-eb6f-4861-833a-14d7acaa7935)
 
- - Are you getting bored yet? Well you have just essentially performed a brute force attack against this poor user's account (Shame on you!)😠
+ - Are you getting bored yet?
+     - Well you have just essentially performed a brute force attack against this poor user's account (Shame on you!)😠
    
  - Don't worry I forgive you, but in the real world a cybersecurity best practice is to configure an account lockout policy after a certain number of incorrect password attempts in order to 
     thwart malicious threat actors performing that very same attack against our end users.
