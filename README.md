@@ -84,6 +84,11 @@
 
 ![image](https://github.com/user-attachments/assets/804bf433-d642-4f29-88eb-60d01e4fd202)
 
+   - Now we will use this Powershell script to add all the created users in the "_EMPLOYEES" OU to the newly created "Non-Admin Remote Desktop Users" security group. (Thank you 
+     Chat GPT!)
+![image](https://github.com/user-attachments/assets/6642390c-8d96-411e-8489-c48c42ef451f)
+
+     
 
 <h3> STEP 1.2: Create the Group Policy Object (GPO) </h3>
 - Open the "Group Policy Management" console 
