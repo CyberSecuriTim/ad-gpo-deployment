@@ -347,3 +347,19 @@
      - It is linked right [here](https://github.com/CyberSecuriTim/dns-overview).
 </p>
 
+
+<h2> If are completely finished with this Active Directory environment and would like to completely delete your computing resources that are being hosted in Azure, then follow the steps below: </h2>
+
+<h3> DELETION STEPS:</h3>
+
+- Access the home page of the [Azure portal](https://portal.azure.com) and select or search for "Resource Groups"
+- Select the Resource Group that contains all your computing resources (VM's, public IP address, Virutal Network Interface Cards etc.)
+- Select "Delete resource group"
+- Apply force delete
+- Enter the name of the resoure group to confirm the deletion.
+
+![image](https://github.com/user-attachments/assets/af2154a8-1f13-425a-a8bd-b203933290d8)
+
+
+- Repeat the steps above 
+
