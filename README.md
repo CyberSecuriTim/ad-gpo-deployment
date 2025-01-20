@@ -288,7 +288,7 @@
 - Now log out of the Domain Client VM.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h3> STEP 2.4: Verify the New Account Lockout Policy by Attempting to Login to the Client VM as any of the Created Users but With the Incorrect Password </h43
+<h3> STEP 2.4: Verify the New Account Lockout Policy by Attempting to Login to the Client VM as any of the Created Users but With the Incorrect Password </h3>
 
-- Notice that once you have surpassed the configured account lockout threshold the account is now locked out. 
+ - Notice that once you have surpassed the configured account lockout threshold the account is now locked out. 
 </p>
