@@ -167,8 +167,17 @@
 ![image](https://github.com/user-attachments/assets/cbaafb9e-0f13-4f44-a133-c31ad486b660)
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+<h3> STEP 1.6: Deploy the GPO </h3>
 
+- Login to the Domain client with an account that has Domain Admin privileges.
+   - Run the command prompt or powershell as an administrator and run the following command:
+     - "gpupdate /force" to force the GPO to be deployed to this client
+     - Alternatively, you could wait for the GPO to be applied automatically.
+    
+
+![image](https://github.com/user-attachments/assets/ac8d86e2-70d0-47d0-8bd5-bcdc1a421a6b)
 
 </p>
