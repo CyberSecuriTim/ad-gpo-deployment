@@ -362,6 +362,6 @@
 ![image](https://github.com/user-attachments/assets/af2154a8-1f13-425a-a8bd-b203933290d8)
 
 
-- Repeat the steps above to delete the Network Watcher Resource Group 
+- Repeat the steps above to delete the Network Watcher Resource Group "NetworkWatcherRG"
 
 ![image](https://github.com/user-attachments/assets/b8c0137b-0aca-430c-a057-7b7100ec2cd2)
