@@ -194,5 +194,7 @@
 
 - Attempt to connect via Remote Desktop to verify the setup.
 
-- 
+![image](https://github.com/user-attachments/assets/9ff726a4-352b-4e7c-bf37-48f486e81d98)
+
+
 </p>
