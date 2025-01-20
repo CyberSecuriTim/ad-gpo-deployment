@@ -314,7 +314,8 @@
 
 
 - Right click the username of the locked out and select "Properties"
-  - Select the "Account" Tab and select "Unlock Account" 
+  - Select the "Account" Tab and select "Unlock Account"
+  - Click "Apply"
 
 ![image](https://github.com/user-attachments/assets/bba66cf8-6aaf-4bbc-b744-9b5a4c4f2601)
 
