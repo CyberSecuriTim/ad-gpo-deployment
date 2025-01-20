@@ -85,11 +85,19 @@
 ![image](https://github.com/user-attachments/assets/804bf433-d642-4f29-88eb-60d01e4fd202)
 
    - Now we will use this Powershell script to add all the created users in the "_EMPLOYEES" OU to the newly created "Non-Admin Remote Desktop Users" security group. (Thank you 
-     Chat GPT!)
+     Chat GPT! 😊)
 ![image](https://github.com/user-attachments/assets/6642390c-8d96-411e-8489-c48c42ef451f)
 
-     
+ - Here is the script I ran in powershell (as an administrator) replacing the placeholder values with my actual domain and OU information.
 
+![image](https://github.com/user-attachments/assets/9de05be3-0eaf-47f0-b601-49f0c18b35a1)
+
+- Observe the members of the "Non-Admin Remote Desktop Users" security group have now been added from the _EMPLOYEES organization unit.
+
+![image](https://github.com/user-attachments/assets/01769c3d-475b-4d93-9944-dae005ced262)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 1.2: Create the Group Policy Object (GPO) </h3>
 - Open the "Group Policy Management" console 
    - Right click the Organizational Unit where all the domain client computers reside "_CLIENTS" (this OU was created in the previous lab) and create the group policy 
