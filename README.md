@@ -141,10 +141,24 @@
 ![image](https://github.com/user-attachments/assets/834583b8-c7c1-4381-8545-f3d0aa23de0f)
 
 
-<h3> STEP 1.5: Verify that the host-based firewall (Windows Firewall with Advanced Security) is not blocking RDP traffic. </h3>
+<h3> STEP 1.5: Enable the Remote Desktop Protocol Inbound Firewall Rule on the host based firewalls for all the Domain Clients using this Group Policy Object  </h3>
 
+- Navigate to:
+  - Computer Configuration > Windows Settings > Security Settings > Windows Defender Firewall with Advanced Security > Inbound Rules
+  - Enable the rule named "Remote Desktop - User Mode (TCP-In)
+  - If this rule does not exist, then create a new one: 
+    - Right Click "Inbound Rules" and select "New Rule..."
+      - Choose "Port"
+      - "TCP"
+      - Specific Local Port: 3389 
+ 
+![image](https://github.com/user-attachments/assets/365641ab-fe79-4974-a238-2142408d5119)
 
+  - Allow the connection 
 
+  ![image](https://github.com/user-attachments/assets/0ffaef4a-912c-498c-9a61-8f2a6acdf784)
 
-   
+ - Apply this rule for the Domain and Private Profiles.
+![image](https://github.com/user-attachments/assets/5caacaad-70af-41e2-acb1-e5908d18fd30)
+
 </p>
