@@ -269,5 +269,17 @@
        - The suggested values are perfectly fine but feel free to modify them at your discretion.
 
 ![image](https://github.com/user-attachments/assets/9affaa81-1227-4fb9-9ee3-e35771a23c57)
-     
+
+
+<h3> STEP 2.3: Deploy the newly edited "Default Domain Policy" to the Domain Client VM. </h3>
+
+- (Turn on the Domain Client VM if it was turned off) Login to the Domain Client VM as a Domain Admin account.
+- Run the command prompt or powershell as an administrator and enter the command "gpupdate /force" to adminstratively "force" the newly edited GPO to be applied to the client VM.
+- Also run the command "gpresult /r" to display the GPO's that have been applied to this Domain Client
+
+![image](https://github.com/user-attachments/assets/15cd3634-b405-44ad-8cf0-42f394c618e8)
+
+
+
+
 </p>
