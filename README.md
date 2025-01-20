@@ -76,7 +76,13 @@
 <p> 
 <h4>(Still Within the Domain Controller VM)</h4>
   
-- Open "Active Directory Users and Computers) 
+- Open "Active Directory Users and Computers"
+  - Right click the name of the domain 
+  - Create a new (Global) Security Group within the domain.
+  - Name this Security Group "Non-Admin Remote Desktop Users"
+
+![image](https://github.com/user-attachments/assets/804bf433-d642-4f29-88eb-60d01e4fd202)
+
 
 - Open the "Group Policy Management" console 
  
