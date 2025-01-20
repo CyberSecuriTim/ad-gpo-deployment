@@ -71,11 +71,12 @@
 </p>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<h2> STEP 1: Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
+<h2> STEP 1: Create and Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
 
 <p> 
 <h4>(Still Within the Domain Controller VM)</h4>
-  
+
+<h3> STEP 1.1: Create a Security Group for Non-Admin Remote Desktop Users</h3>
 - Open "Active Directory Users and Computers"
   - Right click the name of the domain 
   - Create a new (Global) Security Group within the domain.
@@ -84,6 +85,7 @@
 ![image](https://github.com/user-attachments/assets/804bf433-d642-4f29-88eb-60d01e4fd202)
 
 
+<h3> STEP 1.2: Create the Group Policy Object (GPO) </h3>
 - Open the "Group Policy Management" console 
    - Right click the Organizational Unit where all the domain client computers reside "_CLIENTS" (this OU was created in the previous lab) and create the group policy 
      object (GPO) and link it here.
