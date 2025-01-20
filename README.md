@@ -281,5 +281,6 @@
 
 
 
+<h3> STEP 2.4: Verify the New Account Lockout Policy by Attempting to Login to the Client VM as any of the Created Users but With the Incorrect Password  </h43
 
 </p>
