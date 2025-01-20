@@ -215,4 +215,4 @@
 </b> 
 
 ----------------------------------------------------------------------------------------------------------------------------------
-<h2> STEP 2: Configure a Password Lockout Policy by deploying a group policy object. </h2>
+<h2> STEP 2: Configure a Password Lockout Policy by Deploying a Group Policy Object. </h2>
