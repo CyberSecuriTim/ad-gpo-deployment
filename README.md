@@ -105,7 +105,14 @@
   ![image](https://github.com/user-attachments/assets/4b534b0e-0c55-46b4-a7f7-469bef330245)
 
 
+<h3> STEP 1.4: Add the Security Group to the Remote Desktop Users and Group </h3>
 
+- Within the Group Policy Management Editor: 
+  - Navigate to:
+    - Computer Configuration > Policies > Windows Settings > Security Settings > Restricted Groups.
+    - Right Click "Restricted Groups" and select "Add Group..."
+    - Enter "Remote Desktop Users" and select "OK"
+    - Under the "Members of this group" section select "Add..."
 
 
 
