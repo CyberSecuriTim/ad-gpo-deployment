@@ -354,7 +354,7 @@
 <h3> DELETION STEPS:</h3>
 
 - Access the home page of the [Azure portal](https://portal.azure.com) and select or search for "Resource Groups"
-- Select the Resource Group that contains all your computing resources (VM's, public IP address, Virutal Network Interface Cards etc.)
+- Select the primary Resource Group that contains all your computing resources (VM's, public IP address, Virutal Network Interface Cards etc.)
 - Select "Delete resource group"
 - Apply force delete
 - Enter the name of the resoure group to confirm the deletion.
