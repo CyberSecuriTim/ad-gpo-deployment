@@ -98,6 +98,7 @@
   - $GroupName: The name of the global security group.
   - Get-ADUser: Retrieves all users from the specified OU.
   - Add-ADGroupMember: Adds users to the group.
+  - Write-Host: Prints the specified text to the screen. 
 
  
 - Observe the members of the "Non-Admin Remote Desktop Users" security group have now been added from the _EMPLOYEES organization unit.
