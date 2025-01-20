@@ -247,7 +247,7 @@
    - It is automatically linked to our created domain (account lockout configurations and other authentication based events are domain wide operations)
        - As opposed to authorizing users for Remote Desktop Access this is more of a client level operation and thus linking the previously created GPO to the OU containing all our Domain 
           Clients was a more appropriate step to take.   
-   - It takes precedence over any created Group Policy Objects by default...since it is well the default domain policy (very appropriately named😉)
+   - It takes precedence over any created Group Policy Objects by default...it is the default domain policy after all(very appropriately named😉)
    - Doing so will ensure consistent application across our entire domain and we will not risk it overriding a competing custom GPO that we would have created.
   
 - 
