@@ -4,7 +4,8 @@
 
 <h1>Deploying Group Policy Objects within an Active Directory Domain in Azure</h1>
 <p>
-- This tutorial outlines the creation and deployment of group policy objects within an Active Directory domain consisting of Windows virtual machines hosted in Azure.<br />
+
+- This tutorial outlines the creation and deployment of group policy objects within an Active Directory domain consisting of Windows virtual machines hosted in Azure.
 
 - NOTE: To successfully perform this lab, a properly installed and configured Active Directory Domain is required including a functioning domain controller and at least one 
   client connected to this domain controller.
