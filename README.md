@@ -55,7 +55,10 @@
 ![image](https://github.com/user-attachments/assets/83526b16-d498-43f5-bb8c-3caed80e4202)
 
 
-
+  - The password that will automaticall be provisioned to all the created users is "Password1"
+  - The Number of Accounts that will be created is 10,000
+    - Both of these variables can be changed at your discretion.
+    
 
  
 </p>
