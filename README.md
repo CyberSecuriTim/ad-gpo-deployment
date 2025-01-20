@@ -191,9 +191,9 @@
 
 <h3> STEP 1.7: Verify the GPO configurations </h3>
 
-- Login to a client account as one of the created Non-admin users.
+- Login to the Domain Client VM as one of the created Non-admin users.
   - One of my created users was "fapa.canuh" so I will login as this user to test the GPO deploment.
-    - remember the default password assigned to all these created users was "Password1" so use that to login
+    - Remember the default password assigned to all these created users was "Password1" so use that to login
 
 ![image](https://github.com/user-attachments/assets/1d2a48c3-f052-4fc2-930c-43d8eb275739)
 
