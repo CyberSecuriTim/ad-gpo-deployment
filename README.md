@@ -259,7 +259,8 @@
   - Navigate to Computer Configuration > Windows Settins > Security Settings > Account Lockout Policy
   - Right Click "Account Lockout Threshold" and select Properties.
   - Set the lockout threshold to a reasonable number
-  - Click "Apply" 
+  - Click "Apply"
+  
   ![image](https://github.com/user-attachments/assets/1fd7b3b0-53a1-48b9-94ef-9653c9d752a4)
 
    - Notice that the other Account Lockout Policy Settings will automatically be assigned suggested values.
