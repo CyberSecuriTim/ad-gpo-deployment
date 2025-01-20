@@ -33,7 +33,7 @@
 - Step 0: Create multiple Non-Admin users and add them to the Active Directory Domain
 - Step 1: Configure Remote Desktop Access for Non-administrative users on the Domain client VM (and all Domain Clients) via a group policy object
 - Step 2: Configure a Password Lockout Policy for all domain users via a group policy object.
-
+- Bonus Step: Using Active Directory to Re-enable a Locked Account (and Reset the Password).
 <h2>Deployment and Configuration Steps</h2>
 
 <h2> STEP 0: Create multiple Non-Admin Users and Add These Users to the Active Directory Domain using Powershell ISE (Integrated Scripting Environment).</h2>
@@ -285,8 +285,10 @@
 ![image](https://github.com/user-attachments/assets/fa8fd839-ede3-49a8-957f-54685b620853)
 
 
+- Now log out of the Domain Client VM.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h3> STEP 2.4: Verify the New Account Lockout Policy by Attempting to Login to the Client VM as any of the Created Users but With the Incorrect Password  </h43
+<h3> STEP 2.4: Verify the New Account Lockout Policy by Attempting to Login to the Client VM as any of the Created Users but With the Incorrect Password </h43
 
+- Notice that once you have surpassed the configured account lockout threshold the account is now locked out. 
 </p>
