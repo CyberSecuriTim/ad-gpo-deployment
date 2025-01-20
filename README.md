@@ -304,4 +304,11 @@
 
 - Return to the Domain Controller VM and login as a Domain Administrator account.
 - Open "Active Directory Users and Computers" and locate the created user account that has been locked out.
-    - This account should be within the "_EMPLOYEES" organizational unit, along with the other created Non-Admin Domain Users. 
+    - This account should be within the "_EMPLOYEES" organizational unit (along with the other created Non-Admin Domain Users).
+ 
+- Right click the _EMPLOYEES OU and select "Find" then enter the username of the locked out account.
+
+![image](https://github.com/user-attachments/assets/86189fcc-2b07-4d71-aca0-c7cee063e686)
+
+ 
+
