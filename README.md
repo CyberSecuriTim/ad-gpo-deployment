@@ -73,11 +73,13 @@
    - Observe that all the non-admin users were created and placed into this OU by the script.
 </p>
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<h2> STEP 1: Create and Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h2> STEP 1.0: Create and Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
 
 <p> 
 <h4>(Still Within the Domain Controller VM)</h4>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h3> STEP 1.1: Create a Security Group for Non-Admin Remote Desktop Users</h3>
 - Open "Active Directory Users and Computers"
@@ -220,7 +222,7 @@
 </b> 
 
 ----------------------------------------------------------------------------------------------------------------------------------
-<h2> STEP 2: Configure a Password Lockout Policy by Deploying a Group Policy Object. </h2>
+<h2> STEP 2.0: Configure a Password Lockout Policy by Deploying a Group Policy Object. </h2>
 
 <p> 
 
@@ -238,11 +240,13 @@
 
  - Now, lets get to stopping these brute force attacks! 😁
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 2.1: Login to the Domain Controller VM as a Domain Admin account (using the correct credentials this time👀) </h3>
 
 ![image](https://github.com/user-attachments/assets/2a7c2a0c-50dc-4c0b-93b4-530eb5008aa6)
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <h3> STEP 2.2: Open the "Group Policy Management" console and edit the Default Domain Policy To configure the Account Lockout Policy within this Group Policy Object (GPO). </h3>
 
  - NOTE: It is more efficient to simply edit the "Default Domain Policy" as opposed to creating a new GPO for multiple reasons: 
@@ -270,6 +274,7 @@
 
 ![image](https://github.com/user-attachments/assets/9affaa81-1227-4fb9-9ee3-e35771a23c57)
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h3> STEP 2.3: Deploy the newly edited "Default Domain Policy" to the Domain Client VM. </h3>
 
@@ -280,6 +285,7 @@
 ![image](https://github.com/user-attachments/assets/fa8fd839-ede3-49a8-957f-54685b620853)
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h3> STEP 2.4: Verify the New Account Lockout Policy by Attempting to Login to the Client VM as any of the Created Users but With the Incorrect Password  </h43
 
