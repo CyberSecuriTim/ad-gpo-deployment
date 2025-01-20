@@ -232,11 +232,14 @@
      - Well you have just essentially performed a brute force attack against this poor user's account (Shame on you!)😠
    
  - Don't worry I forgive you, but in the real world a cybersecurity best practice is to configure an account lockout policy after a certain number of incorrect password attempts in order to 
-    thwart malicious threat actors performing that very same attack against our end users.
+    prevent malicious threat actors from successfully performing that very same attack against our end users.
 
  - Now, lets get to stopping these brute force attacks! 😁
 
-<h3> STEP 2.1: Login to the Domain Controller VM as a Domain Admin account (using the correct credentials this time) </h3>
+<h3> STEP 2.1: Login to the Domain Controller VM as a Domain Admin account (using the correct credentials this time👀) </h3>
+
+![image](https://github.com/user-attachments/assets/2a7c2a0c-50dc-4c0b-93b4-530eb5008aa6)
+
 
 
 
