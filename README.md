@@ -332,3 +332,9 @@
 ![image](https://github.com/user-attachments/assets/018df6a8-a123-4bde-8702-df2d9c7613c6)
 
 
+<h4> WELCOME BACK bid.nek!</h4>
+
+![image](https://github.com/user-attachments/assets/80393e83-0ff4-4c1b-a7b1-4849f8db01a0)
+
+
+
