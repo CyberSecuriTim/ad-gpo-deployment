@@ -159,6 +159,7 @@
   ![image](https://github.com/user-attachments/assets/0ffaef4a-912c-498c-9a61-8f2a6acdf784)
 
  - Apply this rule for the Domain and Private Profiles.
+
 ![image](https://github.com/user-attachments/assets/5caacaad-70af-41e2-acb1-e5908d18fd30)
 
 </p>
