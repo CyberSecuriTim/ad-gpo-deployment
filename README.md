@@ -211,3 +211,6 @@
 ![image](https://github.com/user-attachments/assets/358cf931-c0e0-4a3c-aa14-32f36d303aad)
 
 </p>
+
+
+<h2> STEP 2: Configure a Password Lockout Policy by deploying a group policy object. </h2>
