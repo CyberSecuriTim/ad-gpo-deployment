@@ -136,9 +136,12 @@
     - Enter "Non-Admin Remote Desktop Users" and select "OK"
     - Under the "Members of this group" section select "Add..."
       - Add the previously created "Non-Admin Remote Desktop Users" security group
-      -  
+      - Click "OK"
 
 ![image](https://github.com/user-attachments/assets/834583b8-c7c1-4381-8545-f3d0aa23de0f)
+
+
+<h3> STEP 1.5: Verify that the host-based firewall (Windows Firewall with Advanced Security) is not blocking RDP traffic. </h3>
 
 
 
