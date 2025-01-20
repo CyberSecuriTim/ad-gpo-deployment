@@ -297,5 +297,5 @@
  - Well at least we stopped a potential brute force attack...but what if "bid.nek" from HR really did just forget his password and was just trying to guess it to acces his account.
      - To Active Directory and our Domain Controller it all looks the same.
      - If "bid.nek" cannot afford to wait the specified amount of time for the lockout to expire how can he gain access to his account.
-       - Find out next time on Group Policy Object Deployment Z...that was corny wasn't it? 😞
+       - "Find out next time on GPO Deployment Z Kai"...that was corny wasn't it? 😞
 </p>
