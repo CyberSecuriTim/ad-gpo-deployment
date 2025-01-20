@@ -299,3 +299,9 @@
      - If "bid.nek" cannot afford to wait the specified amount of time for the lockout to expire how can he gain access to his account.
        - "Find out next time on GPO Deployment Z Kai"...that was corny wasn't it? 😞
 </p>
+
+<h3> BONUS STEP: Re-enabled the Locked Out User Account and Reset the Password Using Active Directory </h3>
+
+- Return to the Domain Controller VM and login as a Domain Administrator account.
+- Open "Active Directory Users and Computers" and locate the created user account that has been locked out.
+    - This account should be within the "_EMPLOYEES" organizational unit, along with the other created Non-Admin Domain Users. 
