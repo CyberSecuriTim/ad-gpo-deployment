@@ -55,9 +55,12 @@
 ![image](https://github.com/user-attachments/assets/83526b16-d498-43f5-bb8c-3caed80e4202)
 
 
-  - The password that will automaticall be provisioned to all the created users is "Password1"
-  - The Number of Accounts that will be created is 10,000
+  - The password that will automatically be provisioned (by default) to all the users created by the script is "Password1"
+  - The nummber of accounts that will be created by the script (by default) is 10,000
     - Both of these variables can be changed at your discretion.
+   
+![image](https://github.com/user-attachments/assets/f1962ed4-320f-4079-9d8e-fff8a8bff2bf)
+
     
 
  
