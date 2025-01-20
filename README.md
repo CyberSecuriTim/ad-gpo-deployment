@@ -115,6 +115,7 @@
 
 ![image](https://github.com/user-attachments/assets/e62fe5fd-b13e-49bb-a8c9-e902c1c398bf) ![image](https://github.com/user-attachments/assets/f309b193-0dab-440a-873b-f8941cf54487)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 1.3: Edit the GPO </h3>
 
 - Right Click the newly created GPO and click "Edit..."
@@ -126,14 +127,14 @@
        
   ![image](https://github.com/user-attachments/assets/4b534b0e-0c55-46b4-a7f7-469bef330245)
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 1.4: Add the Security Group to the Remote Desktop Users and Group </h3>
 
 - Within the Group Policy Management Editor: 
   - Navigate to:
     - Computer Configuration > Policies > Windows Settings > Security Settings > Restricted Groups.
     - Right Click "Restricted Groups" and select "Add Group..."
-    - Enter "Non-Admin Remote Desktop Users" and select "OK"
+    - Enter "Remote Desktop Users" and select "OK"
     - Under the "Members of this group" section select "Add..."
       - Add the previously created "Non-Admin Remote Desktop Users" security group
       - Click "OK"
