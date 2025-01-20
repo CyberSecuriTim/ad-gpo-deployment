@@ -33,7 +33,8 @@
 - Step 0: Create multiple Non-Admin users and add them to the Active Directory Domain
 - Step 1: Configure Remote Desktop Access for Non-administrative users on the Domain client VM (and all Domain Clients) via a group policy object
 - Step 2: Configure a Password Lockout Policy for all domain users via a group policy object.
-- Bonus Step: Using Active Directory to Re-enable a Locked Account (and Reset the Password).
+- Bonus Step: Using Active Directory to Unlock a Locked Account (and Reset the Password).
+
 <h2>Deployment and Configuration Steps</h2>
 
 <h2> STEP 0: Create multiple Non-Admin Users and Add These Users to the Active Directory Domain using Powershell ISE (Integrated Scripting Environment).</h2>
@@ -299,16 +300,23 @@
      - If "bid.nek" cannot afford to wait the specified amount of time for the lockout to expire how can he gain access to his account.
        - "Find out next time on GPO Deployment Z Kai"...that was corny wasn't it? 😞
 </p>
-
-<h3> BONUS STEP: Re-enabled the Locked Out User Account and Reset the Password Using Active Directory </h3>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h3> BONUS STEP: Unlock the Locked User Account and Reset the Password Using Active Directory </h3>
 
 - Return to the Domain Controller VM and login as a Domain Administrator account.
 - Open "Active Directory Users and Computers" and locate the created user account that has been locked out.
     - This account should be within the "_EMPLOYEES" organizational unit (along with the other created Non-Admin Domain Users).
  
 - Right click the _EMPLOYEES OU and select "Find" then enter the username of the locked out account.
+    - Click "Find Now" 
 
 ![image](https://github.com/user-attachments/assets/86189fcc-2b07-4d71-aca0-c7cee063e686)
 
- 
+
+- Right click the username of the locked out and select "Properties"
+  - Navigate to the  
+
+
+ ![image](https://github.com/user-attachments/assets/09b438d6-f0fd-4778-8ad5-54ead323dc0c)
+
 
