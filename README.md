@@ -337,4 +337,11 @@
 ![image](https://github.com/user-attachments/assets/80393e83-0ff4-4c1b-a7b1-4849f8db01a0)
 
 
+<h2> Congratulations! You have successfully created and deployed GPO's within your created Active Directory Domain. You even restored "bid.nek's" account (or whatever random username 
+    was created by the Powershell script for your lab)😂. I'm sure whoever it was sends their kindest regards. </h2>
+<p>
+
+  - Now you can keep experimenting within your Active Directory Domain at your own discretion using your Domain Client and Domain Controller. In fact, you could always take a look at 
+    the lab I did for building a basic intuition for DNS (Domain Name System) which uses this same AD infrastructure that we have built in these previous two labs.  It is linked right [here](https://github.com/CyberSecuriTim/dns-overview)
+</p>
 
