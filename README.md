@@ -85,8 +85,11 @@
 
 
 - Open the "Group Policy Management" console 
-   - Right click the Organizational Unit where all the domain client computers reside (_CLIENTS) and create the group policy object and link it here. 
+   - Right click the Organizational Unit where all the domain client computers reside "_CLIENTS" (this OU was created in the previous lab) and create the group policy 
+     object (GPO) and link it here.
+   - Name this new GPO "Enable RDP for Non-Admin Users) 
 
-![image](https://github.com/user-attachments/assets/e62fe5fd-b13e-49bb-a8c9-e902c1c398bf)
+![image](https://github.com/user-attachments/assets/e62fe5fd-b13e-49bb-a8c9-e902c1c398bf) ![image](https://github.com/user-attachments/assets/f309b193-0dab-440a-873b-f8941cf54487)
+
 
 </p>
