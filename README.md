@@ -109,6 +109,7 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 1.2: Create the Group Policy Object (GPO) </h3>
+
 - Open the "Group Policy Management" console 
    - Right click the Organizational Unit where all the domain client computers reside "_CLIENTS" (this OU was created in the previous lab) and create the group policy 
      object (GPO) and link it here.
