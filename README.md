@@ -74,7 +74,11 @@
 <h2> STEP 1: Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
 
 <p> 
+<h4>(Still Within the Domain Controller VM)</h4>
+  
+- Open "Active Directory Users and Computers) 
 
+- Open the "Group Policy Management" console 
  
 
 </p>
