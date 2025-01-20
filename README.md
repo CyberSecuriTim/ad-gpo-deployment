@@ -92,7 +92,7 @@
 
 ![image](https://github.com/user-attachments/assets/9de05be3-0eaf-47f0-b601-49f0c18b35a1)
 
-- Explaining each variable in the script:
+- Explaining each variable and function in the script:
   - $OU: The distinguished name (DN) of the organizational unit containing the users.
   - $GroupName: The name of the global security group.
   - Get-ADUser: Retrieves all users from the specified OU.
