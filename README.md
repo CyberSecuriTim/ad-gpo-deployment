@@ -62,7 +62,7 @@
 ![image](https://github.com/user-attachments/assets/f1962ed4-320f-4079-9d8e-fff8a8bff2bf)
 
     
-
+- Run the script and observer the accounts being created. 
  
 </p>
 
