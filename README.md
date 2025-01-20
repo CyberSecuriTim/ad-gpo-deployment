@@ -183,6 +183,7 @@
 ![image](https://github.com/user-attachments/assets/ac8d86e2-70d0-47d0-8bd5-bcdc1a421a6b)
 
 
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -193,6 +194,8 @@
     - remember the default password assigned to all these created users was "Password1" so use that to login
 
 ![image](https://github.com/user-attachments/assets/1d2a48c3-f052-4fc2-930c-43d8eb275739)
+
+![image](https://github.com/user-attachments/assets/358cf931-c0e0-4a3c-aa14-32f36d303aad)
 
 - Attempt to connect via Remote Desktop to verify the setup.
 
