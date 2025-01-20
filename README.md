@@ -38,7 +38,7 @@
 
 <p> 
 
-  - Turn on your Domain Controller VM if it was turned off at the end of the previous lab and establish a remote desktop connection to it using its public IP address.
+  - Turn on your Domain Controller VM, if it was turned off at the end of the previous lab and establish a remote desktop connection to it using its public IP address.
      - Log in as one of the accounts from the previous lab that has Domain Admin privileges.
    
   ![image](https://github.com/user-attachments/assets/1971c08f-e7c2-4e48-bc0a-cdb75052df00)
@@ -48,8 +48,8 @@
 
   ![image](https://github.com/user-attachments/assets/a6b44e9a-8e61-4641-9628-42d124c8a5ad)
 
-   - Create a new file then copy and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into the 
-     Powershell ISE file . 
+   - Create a new file then copy and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into the newly 
+     created Powershell ISE file . 
 
 ![image](https://github.com/user-attachments/assets/6951b099-ad34-42fd-ab59-0d4d86faa6d2) 
 
