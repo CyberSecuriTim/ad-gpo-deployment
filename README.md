@@ -322,5 +322,8 @@
 
 - Now to reset the password, right click the account and select "Reset Password"
   - Assign a new password to this user.
-    - I chose "Password2"...very secure, I know 😅 
+    - I chose "Password2"...very secure, I know 😅
+
+  ![image](https://github.com/user-attachments/assets/1abc2a12-6518-4002-8419-3da2d1afb654)
+
 
