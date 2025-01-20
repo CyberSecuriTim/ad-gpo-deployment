@@ -93,5 +93,21 @@
 
 ![image](https://github.com/user-attachments/assets/e62fe5fd-b13e-49bb-a8c9-e902c1c398bf) ![image](https://github.com/user-attachments/assets/f309b193-0dab-440a-873b-f8941cf54487)
 
+<h3> STEP 1.3: Edit the GPO </h3>
 
+- Right Click the newly created GPO and click "Edit..."
+    - This will automatically open the "Group Policy Management Editor"
+    - Navigate to:
+      - Computer Configuration > Policies > Administrative Templates > Windows Components >  Remote Desktop Services > Remote Desktop Session Host > Connections
+      - Right click the setting "Allow users to connect remotely by using Remote Desktop Services
+        - Edit it and set its state to "Enabled"
+       
+  ![image](https://github.com/user-attachments/assets/4b534b0e-0c55-46b4-a7f7-469bef330245)
+
+
+
+
+
+
+   
 </p>
