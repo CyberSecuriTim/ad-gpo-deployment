@@ -139,7 +139,8 @@
       - Add the previously created "Non-Admin Remote Desktop Users" security group
       - Click "OK"
 
-![image](https://github.com/user-attachments/assets/834583b8-c7c1-4381-8545-f3d0aa23de0f)
+![image](https://github.com/user-attachments/assets/63366d2c-4d1c-4e99-bce8-43b835bad579)
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 1.5: Enable the Remote Desktop Protocol Inbound Firewall Rule on the host based firewalls for all the Domain Clients using this Group Policy Object  </h3>
