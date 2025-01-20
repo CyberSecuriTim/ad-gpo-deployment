@@ -140,7 +140,7 @@
 
 ![image](https://github.com/user-attachments/assets/834583b8-c7c1-4381-8545-f3d0aa23de0f)
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 1.5: Enable the Remote Desktop Protocol Inbound Firewall Rule on the host based firewalls for all the Domain Clients using this Group Policy Object  </h3>
 
 - Navigate to:
@@ -161,5 +161,14 @@
  - Apply this rule for the Domain and Private Profiles.
 
 ![image](https://github.com/user-attachments/assets/5caacaad-70af-41e2-acb1-e5908d18fd30)
+
+- Lastly, name this host-based firewall rule (ideally something along the lines of Allow RDP
+
+![image](https://github.com/user-attachments/assets/cbaafb9e-0f13-4f44-a133-c31ad486b660)
+
+
+
+
+
 
 </p>
