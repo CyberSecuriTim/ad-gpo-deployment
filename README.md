@@ -180,4 +180,17 @@
 
 ![image](https://github.com/user-attachments/assets/ac8d86e2-70d0-47d0-8bd5-bcdc1a421a6b)
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<h3> STEP 1.7: Verify the GPO configurations </h3>
+
+- Login to a client account as one of the created Non-admin users.
+  - One of my created users was fapa.canuh so I will login as this user to test the GPO deploment.
+    - remember the default password assigned to all these created users was "Password1" so use that to login
+     
+- Attempt to connect via Remote Desktop to verify the setup.
+
+- 
 </p>
