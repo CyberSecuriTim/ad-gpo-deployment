@@ -35,6 +35,7 @@
 <h2> STEP 1: Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
 
 <p> 
+
   - Turn on your Domain Controller VM if it was turned off at the end of the previous lab and establish an remote desktop connection to it using its public IP address.
   
 </p>
