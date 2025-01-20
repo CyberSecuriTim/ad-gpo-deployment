@@ -6,7 +6,7 @@
 <p>
 
 - This tutorial outlines the creation and deployment of group policy objects (GPOs) within an Active Directory domain consisting of Windows virtual machines hosted in Azure.
-  - Specifically creating (and deploying) a GPO to authorize Remote Desktop Access to created Non-Admin Users and creating and deploying a GPO for account lockouts after a certain number 
+  - Specifically, creating (and deploying) a GPO to authorize Remote Desktop Access to created Non-Admin Users and creating and deploying a GPO for account lockouts after a certain number 
     of incorrect password attempts 
 
 - NOTE: To successfully perform this lab, a properly installed and configured Active Directory Domain is required including a functioning domain controller and at least one 
