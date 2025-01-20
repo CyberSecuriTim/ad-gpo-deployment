@@ -327,5 +327,8 @@
   ![image](https://github.com/user-attachments/assets/1abc2a12-6518-4002-8419-3da2d1afb654)   ![image](https://github.com/user-attachments/assets/618d1a46-b087-4065-b67b-bea4fe7b394d)
 
 
-<h4> Login to the newly unlocked account using the new password.</h4>
+<h3> Login to the Domain Client with the newly unlocked account using its new password.</h3>
+
+![image](https://github.com/user-attachments/assets/018df6a8-a123-4bde-8702-df2d9c7613c6)
+
 
