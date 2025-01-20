@@ -195,11 +195,15 @@
 
 ![image](https://github.com/user-attachments/assets/1d2a48c3-f052-4fc2-930c-43d8eb275739)
 
-![image](https://github.com/user-attachments/assets/358cf931-c0e0-4a3c-aa14-32f36d303aad)
 
 - Attempt to connect via Remote Desktop to verify the setup.
 
 ![image](https://github.com/user-attachments/assets/9ff726a4-352b-4e7c-bf37-48f486e81d98)
 
+
+
+
+
+![image](https://github.com/user-attachments/assets/358cf931-c0e0-4a3c-aa14-32f36d303aad)
 
 </p>
