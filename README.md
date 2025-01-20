@@ -225,6 +225,7 @@
 <h4> OPTIONAL STEP: Attempt to login to the Domain Client with any of the created users but use the incorrect password. </h4>
 
  - Perform this step multiple times.
+
 ![image](https://github.com/user-attachments/assets/6e6fbaa8-eb6f-4861-833a-14d7acaa7935)
 
  - Are you getting bored yet? Well you have just essentially performed a brute force attack against this poor user's account (Shame on you!)😠
