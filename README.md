@@ -324,6 +324,7 @@
   - Assign a new password to this user.
     - I chose "Password2"...very secure, I know 😅
 
-  ![image](https://github.com/user-attachments/assets/1abc2a12-6518-4002-8419-3da2d1afb654)
+  ![image](https://github.com/user-attachments/assets/1abc2a12-6518-4002-8419-3da2d1afb654)   ![image](https://github.com/user-attachments/assets/618d1a46-b087-4065-b67b-bea4fe7b394d)
+
 
 
