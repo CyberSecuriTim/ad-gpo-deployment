@@ -47,8 +47,12 @@
 
   ![image](https://github.com/user-attachments/assets/a6b44e9a-8e61-4641-9628-42d124c8a5ad)
 
-   - Create a new file and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into it. 
+   - Create a new file then copy and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into the 
+     Powershell ISE file . 
 
+![image](https://github.com/user-attachments/assets/6951b099-ad34-42fd-ab59-0d4d86faa6d2) 
+
+![image](https://github.com/user-attachments/assets/83526b16-d498-43f5-bb8c-3caed80e4202)
 
 
 
