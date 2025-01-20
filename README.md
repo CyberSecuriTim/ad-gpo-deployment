@@ -315,9 +315,12 @@
 
 - Right click the username of the locked out and select "Properties"
   - Select the "Account" Tab and select "Unlock Account"
-  - Click "Apply"
+  - Click "Apply" then "OK"
 
 ![image](https://github.com/user-attachments/assets/bba66cf8-6aaf-4bbc-b744-9b5a4c4f2601)
 
 
+- Now to reset the password, right click the account and select "Reset Password"
+  - Assign a new password to this user.
+    - I chose "Password2"...very secure, I know 😅 
 
