@@ -27,12 +27,13 @@
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
+- Step 0: Create multiple Non-Admin users and add them to the Active Directory Domain
 - Step 1: Configure Remote Desktop Access for Non-administrative users on the Domain client VM (and all Domain Clients) via a group policy object
 - Step 2: Configure a Password Lockout Policy for all domain users via a group policy object.
 
 <h2>Deployment and Configuration Steps</h2>
 
-<h2> STEP 1: Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
+<h2> STEP 0: Create multiple Non-Admin Users and Add These Users to the Active Directory Domain.</h2>
 
 <p> 
 
@@ -40,5 +41,26 @@
      - Log in as one of the accounts from the previous lab that has Domain Admin privileges.
    
   ![image](https://github.com/user-attachments/assets/1971c08f-e7c2-4e48-bc0a-cdb75052df00)
+
+
+  - Run "Windows Powershell ISE" (Integrated Scripting Environment) as an administrator
+
+  ![image](https://github.com/user-attachments/assets/a6b44e9a-8e61-4641-9628-42d124c8a5ad)
+
+   - Create a new file and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into it. 
+
+
+
+
+
+ 
+</p>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h2> STEP 1: Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
+
+<p> 
+
+ 
 
 </p>
