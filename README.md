@@ -3,12 +3,14 @@
 </p>
 
 <h1>Deploying Group Policy Objects within an Active Directory Domain in Azure</h1>
+<p>
 - This tutorial outlines the creation and deployment of group policy objects within an Active Directory domain consisting of Windows virtual machines hosted in Azure.<br />
 
 - NOTE: To successfully perform this lab, a properly installed and configured Active Directory Domain is required including a functioning domain controller and at least one 
   client connected to this domain controller.
   - For a comprehensive step-by-step tutorial on how to achieve this please take a look at my previous lab linked [here](https://github.com/CyberSecuriTim/ad-configuration).
- 
+
+ </p>
     
 <h2>Environments and Technologies Used</h2>
 
@@ -32,5 +34,6 @@
 <h2> STEP 1: Deploy a Group Policy Object to Enable Remote Desktop Access for Non-admin users on all domain clients  </h2>
 
 <p> 
-  - 
+  - Turn on your Domain Controller VM if it was turned off at the end of the previous lab and establish an remote desktop connection to it using its public IP address.
+  
 </p>
