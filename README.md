@@ -53,7 +53,7 @@
   ![image](https://github.com/user-attachments/assets/a6b44e9a-8e61-4641-9628-42d124c8a5ad)
 
    - Create a new file then copy and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into the newly 
-     created PowerShell ISE file . 
+     created PowerShell ISE file. 
 
 ![image](https://github.com/user-attachments/assets/6951b099-ad34-42fd-ab59-0d4d86faa6d2) 
 
@@ -86,7 +86,7 @@
 <h3> STEP 1.1: Create a Security Group for Non-Admin Remote Desktop Users</h3>
 
 - Open "Active Directory Users and Computers"
-  - Right click the name of the domain. 
+  - Right-click the name of the domain. 
   - Create a new (Global) Security Group within the domain.
   - Name this Security Group "Non-Admin Remote Desktop Users".
 
@@ -118,7 +118,7 @@
 <h3> STEP 1.2: Create the Group Policy Object (GPO) </h3>
 
 - Open the "Group Policy Management" console 
-   - Right click the Organizational Unit where all the domain client computers reside "_CLIENTS" (this OU was created in the 
+   - Right-click the Organizational Unit where all the domain client computers reside "_CLIENTS" (this OU was created in the 
     previous lab) and create the group policy object (GPO) and link it here.
    - Name this new GPO "Enable RDP for Non-Admin Users". 
 
@@ -127,11 +127,11 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 1.3: Edit the GPO </h3>
 
-- Right Click the newly created GPO and click "Edit..."
+- Right-click the newly created GPO and click "Edit..."
     - This will automatically open the "Group Policy Management Editor"
     - Navigate to:
       - Computer Configuration > Policies > Administrative Templates > Windows Components >  Remote Desktop Services > Remote Desktop Session Host > Connections
-      - Right click the setting "Allow users to connect remotely by using Remote Desktop Services
+      - Right-click the setting "Allow users to connect remotely by using Remote Desktop Services
         - Edit it and set its state to "Enabled".
        
   ![image](https://github.com/user-attachments/assets/4b534b0e-0c55-46b4-a7f7-469bef330245)
@@ -142,7 +142,7 @@
 - Within the Group Policy Management Editor: 
   - Navigate to:
     - Computer Configuration > Policies > Windows Settings > Security Settings > Restricted Groups.
-    - Right Click "Restricted Groups" and select "Add Group..."
+    - Right-Click "Restricted Groups" and select "Add Group..."
     - Enter "Remote Desktop Users" and select "OK"
     - Under the "Members of this group" section select "Add..."
       - Add the previously created "Non-Admin Remote Desktop Users" security group
@@ -152,13 +152,13 @@
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<h3> STEP 1.5: Enable the Remote Desktop Protocol Inbound Firewall Rule on the host based firewalls for all the Domain Clients using this Group Policy Object  </h3>
+<h3> STEP 1.5: Enable the Remote Desktop Protocol Inbound Firewall Rule on the host-based firewalls for all the Domain Clients using this Group Policy Object  </h3>
 
 - Navigate to:
   - Computer Configuration > Windows Settings > Security Settings > Windows Defender Firewall with Advanced Security > Inbound Rules
   - Enable the rule named "Remote Desktop - User Mode (TCP-In)"
   - If this rule does not exist, then create a new one: 
-    - Right Click "Inbound Rules" and select "New Rule..."
+    - Right-Click "Inbound Rules" and select "New Rule..."
       - Choose "Port"
       - "TCP"
       - Specific Local Port: 3389 
@@ -184,7 +184,7 @@
 <h3> STEP 1.6: Deploy the GPO </h3>
 
 - Login to the Domain client with an account that has Domain Admin privileges.
-   - Run the command prompt or powershell as an administrator and run the following command:
+   - Run the command prompt or PowerShell as an administrator and run the following command:
      - "gpupdate /force" to force the GPO to be deployed to this client
      - Alternatively, you could wait for the GPO to be applied automatically.
     
@@ -236,12 +236,12 @@
 ![image](https://github.com/user-attachments/assets/6e6fbaa8-eb6f-4861-833a-14d7acaa7935)
 
  - Are you getting bored yet?
-     - Well you have just essentially performed a brute force attack against this poor user's account (Shame on you!)😠
+     - Well you have just essentially performed a brute-force attack against this poor user's account (Shame on you!)😠
    
  - Don't worry I forgive you, but in the real world a cybersecurity best practice is to configure an account lockout policy after a certain number of incorrect password attempts in order to 
     prevent malicious threat actors from successfully performing that very same attack against our end users.
 
- - Now, lets get to stopping these brute force attacks! 😁
+ - Now, let's get to stopping these brute-force attacks! 😁
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h3> STEP 2.1: Login to the Domain Controller VM as a Domain Admin account (using the correct credentials this time👀) </h3>
@@ -253,19 +253,19 @@
 <h3> STEP 2.2: Open the "Group Policy Management" console and edit the Default Domain Policy To configure the Account Lockout Policy within this Group Policy Object (GPO). </h3>
 
  - NOTE: It is more efficient to simply edit the "Default Domain Policy" as opposed to creating a new GPO for multiple reasons: 
-   - It is automatically linked to our created domain (account lockout configurations and other authentication based events are domain wide operations)
+   - It is automatically linked to our created domain (account lockout configurations and other authentication-based events are domain-wide operations)
        - As opposed to authorizing users for Remote Desktop access, which is more of a client-level operation and thus linking the previously created GPO to the OU containing all our Domain Clients was a more appropriate step to take.   
    - It, by default, takes precedence over any created Group Policy Objects...it is the default domain policy after all (very aptly named😉)
        - Doing so will ensure consistent application across our entire domain and we will not risk it overriding a competing custom GPO that we would have created.
   
-- Right click the "Default Domain Policy" and select Edit
+- Right-click the "Default Domain Policy" and select Edit
   - This will open the "Group Policy Management Editor" 
 
 ![image](https://github.com/user-attachments/assets/282fdbab-fb3a-4047-a5bc-e734b0805b4a)
 
 - Within the "Group Policy Management Editor":
-  - Navigate to Computer Configuration > Windows Settins > Security Settings > Account Lockout Policy
-  - Right Click "Account Lockout Threshold" and select Properties.
+  - Navigate to Computer Configuration > Windows Settings > Security Settings > Account Lockout Policy
+  - Right-click "Account Lockout Threshold" and select "Properties".
   - Set the lockout threshold to a reasonable number
   - Click "Apply"
   
@@ -281,8 +281,8 @@
 <h3> STEP 2.3: Deploy the newly edited "Default Domain Policy" to the Domain Client VM. </h3>
 
 - (Turn on the Domain Client VM if it was turned off) Login to the Domain Client VM as a Domain Admin account.
-- Run the command prompt or powershell as an administrator and enter the command "gpupdate /force" to adminstratively "force" the newly edited GPO to be applied to the client VM.
-- Also run the command "gpresult /r" to display the GPO's that have been applied to this Domain Client
+- Run the command prompt or PowerShell as an administrator and enter the command "gpupdate /force" to administratively "force" the newly edited GPO to be applied to the client VM.
+- Also run the command "gpresult /r" to display the GPOs that have been applied to this Domain Client
 
 ![image](https://github.com/user-attachments/assets/fa8fd839-ede3-49a8-957f-54685b620853)
 
@@ -290,13 +290,13 @@
 - Now log out of the Domain Client VM.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h3> STEP 2.4: Verify the New Account Lockout Policy by Attempting to Login to the Client VM as any of the Created Users but With the Incorrect Password </h3>
+<h3> STEP 2.4: Verify the New Account Lockout Policy by Attempting to Log in to the Client VM as any of the Created Users but With the Incorrect Password </h3>
 
  - Notice that once you have surpassed the configured account lockout threshold the account is now locked out.
 
 ![image](https://github.com/user-attachments/assets/a811350f-04b5-4843-8529-f979019c9a2d)
 
- - Well at least we stopped a potential brute force attack...but what if "bid.nek" from HR really did just forget his password and was just trying to guess it to acces his account.
+ - Well at least we stopped a potential brute force attack...but what if "bid.nek" from HR genuinely did forget his password and was just trying to guess it to access his account.
      - To Active Directory and our Domain Controller it all looks the same.
      - If "bid.nek" cannot afford to wait the specified amount of time for the lockout to expire how can he gain access to his account.
        - "Find out next time on GPO Deployment Z Kai"...that was corny wasn't it? 😞
@@ -321,7 +321,7 @@
 ![image](https://github.com/user-attachments/assets/bba66cf8-6aaf-4bbc-b744-9b5a4c4f2601)
 
 
-- Now to reset the password, right click the account and select "Reset Password"
+- Now to reset the password, right-click the account and select "Reset Password"
   - Assign a new password to this user.
     - I chose "Password2"...very secure, I know 😅
 
@@ -339,11 +339,11 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h2> Congratulations! You have successfully created and deployed GPO's within your Active Directory Domain. You even restored "bid.nek's" account (or whatever random username 
+<h2> Congratulations! You have successfully created and deployed GPOs within your Active Directory Domain. You even restored "bid.nek's" account (or whatever random username 
     was created by the Powershell script for your lab)😂. I'm sure whoever it was sends their kindest regards. </h2>
 <p>
 
-  - Now you can keep experimenting within your Active Directory Domain at your own discretion using your Domain Client and Domain Controller.
+  - Now you can keep experimenting within your Active Directory Domain at your discretion using your Domain Client and Domain Controller.
   - In fact, feel free to take a look at the lab I did to build a basic intuition for DNS (Domain Name System) which uses this same AD infrastructure that we have built in these 
      previous two labs.
      - It is linked right [here](https://github.com/CyberSecuriTim/dns-overview).
@@ -355,10 +355,10 @@
 <h3> DELETION STEPS:</h3>
 
 - Access the home page of the [Azure portal](https://portal.azure.com) and select or search for "Resource Groups"
-- Select the primary Resource Group that contains all your computing resources (VM's, public IP address, Virutal Network Interface Cards etc.)
+- Select the primary Resource Group that contains all your computing resources (VMs, public IP addresses, Virtual Network Interface Cards etc.)
 - Select "Delete resource group"
 - Apply force delete
-- Enter the name of the resoure group to confirm the deletion.
+- Enter the name of the resource group to confirm the deletion.
 
 ![image](https://github.com/user-attachments/assets/af2154a8-1f13-425a-a8bd-b203933290d8)
 
