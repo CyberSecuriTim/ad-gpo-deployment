@@ -7,10 +7,10 @@
 
 - This tutorial outlines the creation and deployment of group policy objects (GPOs) within an Active Directory domain consisting of Windows virtual machines hosted in Azure.
   - Specifically, creating and deploying a GPO to authorize Remote Desktop access to newly created Non-Admin Users.
-  - Creating and deploying a GPO to trigger account lockouts after a certain number of incorrect password attempts 
+  - Creating and deploying a GPO to trigger account lockouts after a certain number of incorrect password attempts.
 
-- NOTE: To successfully perform this lab, a properly installed and configured Active Directory Domain is required, including a functioning domain controller and at least one client connected to this domain controller.
-  - For a comprehensive step-by-step tutorial on how to achieve this please take a look at my previous lab linked below:
+- NOTE: To successfully perform this lab, a properly installed and configured Active Directory domain is required, including a functioning domain controller and at least one client connected to this domain controller.
+  - For a comprehensive step-by-step tutorial on how to achieve this, please take a look at my previous lab linked below:
       - [Active Directory Installation](https://github.com/CyberSecuriTim/ad-configuration)
 
  </p>
@@ -25,42 +25,44 @@
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
-- Windows 10 (21H2)
+- Windows 10 (22H2)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Step 0: Create multiple Non-Admin users and add them to the Active Directory Domain
-- Step 1: Configure Remote Desktop Access for Non-administrative users on the Domain client VM (and all Domain Clients) via a group policy object
+- Step 1: Configure Remote Desktop Access for Non-administrative users on the Domain client VM (and all Domain Clients) via a 
+  group policy object
 - Step 2: Configure a Password Lockout Policy for all domain users via a group policy object.
 - Bonus Step: Using Active Directory to Unlock a Locked Account (and Reset the Password).
 
 <h2>Deployment and Configuration Steps</h2>
 
-<h2> STEP 0: Create multiple Non-Admin Users and Add These Users to the Active Directory Domain using Powershell ISE (Integrated Scripting Environment).</h2>
+<h2> STEP 0: Create multiple Non-Admin Users and Add These Users to the Active Directory Domain using PowerShell ISE (Integrated Scripting Environment).</h2>
 
 <p> 
 
-  - Turn on your Domain Controller VM, if it was turned off at the end of the previous lab and establish a remote desktop connection to it using its public IP address.
+  - Turn on your Domain Controller VM, if it was turned off at the end of the previous lab, and establish a remote desktop 
+    connection to it using its public IP address.
      - Log in as one of the accounts from the previous lab that has Domain Admin privileges.
    
   ![image](https://github.com/user-attachments/assets/1971c08f-e7c2-4e48-bc0a-cdb75052df00)
 
 
-  - Run "Windows Powershell ISE" (Integrated Scripting Environment) as an administrator
+  - Run "Windows PowerShell ISE" (Integrated Scripting Environment) as an administrator
 
   ![image](https://github.com/user-attachments/assets/a6b44e9a-8e61-4641-9628-42d124c8a5ad)
 
    - Create a new file then copy and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into the newly 
-     created Powershell ISE file . 
+     created PowerShell ISE file . 
 
 ![image](https://github.com/user-attachments/assets/6951b099-ad34-42fd-ab59-0d4d86faa6d2) 
 
 ![image](https://github.com/user-attachments/assets/83526b16-d498-43f5-bb8c-3caed80e4202)
 
 
-  - The password that will automatically be provisioned (by default) to all the users created by the script is "Password1"
-  - The nummber of accounts that will be created by the script (by default) is 10,000
-    - Both of these variables can be changed at your discretion.
+  - The password that will automatically be provisioned to all the users created by the script is "Password1"
+  - The number of accounts that will be created by the script is 10,000
+    - Both of these default variables can be changed at your discretion.
    
 ![image](https://github.com/user-attachments/assets/f1962ed4-320f-4079-9d8e-fff8a8bff2bf)
 
@@ -70,7 +72,7 @@
 ![image](https://github.com/user-attachments/assets/6559aa0b-6302-4296-a989-cc9a67196d85)
 
  - Open "Active Directory Users and Computers" and select the "_EMPLOYEES" organizational unit (which was created in the previous lab)
-   - Observe that all the non-admin users were created and placed into this OU by the script.
+   - Observe that all the non-admin users were created and automatically placed into this OU by the script.
 </p>
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -83,14 +85,13 @@
 
 <h3> STEP 1.1: Create a Security Group for Non-Admin Remote Desktop Users</h3>
 - Open "Active Directory Users and Computers"
-  - Right click the name of the domain 
+  - Right click the name of the domain. 
   - Create a new (Global) Security Group within the domain.
-  - Name this Security Group "Non-Admin Remote Desktop Users"
+  - Name this Security Group "Non-Admin Remote Desktop Users".
 
 ![image](https://github.com/user-attachments/assets/804bf433-d642-4f29-88eb-60d01e4fd202)
 
-   - Now we will use this Powershell script to add all the created users in the "_EMPLOYEES" OU to the newly created "Non-Admin Remote Desktop Users" security group. (Thank you 
-     Chat GPT! 😊)
+   - Now we will use this Powershell script to add all the created users in the "_EMPLOYEES" OU into the newly created "Non-Admin Remote Desktop Users" security group. (Thank you Chat GPT! 😊)
 ![image](https://github.com/user-attachments/assets/6642390c-8d96-411e-8489-c48c42ef451f)
 
  - Here is the script I ran in powershell (as an administrator) replacing the placeholder values with my actual domain and OU information.
@@ -106,7 +107,8 @@
   - Write-Host: Prints the specified text to the screen. 
 
  
-- Observe the members of the "Non-Admin Remote Desktop Users" security group have now been added from the _EMPLOYEES organization unit.
+- Observe the members of the "Non-Admin Remote Desktop Users" security group have now been added from the _EMPLOYEES 
+  organization unit.
 
 ![image](https://github.com/user-attachments/assets/01769c3d-475b-4d93-9944-dae005ced262)
 
