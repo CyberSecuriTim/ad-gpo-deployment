@@ -132,7 +132,7 @@
     - Navigate to:
       - Computer Configuration > Policies > Administrative Templates > Windows Components >  Remote Desktop Services > Remote Desktop Session Host > Connections
       - Right click the setting "Allow users to connect remotely by using Remote Desktop Services
-        - Edit it and set its state to "Enabled"
+        - Edit it and set its state to "Enabled".
        
   ![image](https://github.com/user-attachments/assets/4b534b0e-0c55-46b4-a7f7-469bef330245)
 
@@ -156,7 +156,7 @@
 
 - Navigate to:
   - Computer Configuration > Windows Settings > Security Settings > Windows Defender Firewall with Advanced Security > Inbound Rules
-  - Enable the rule named "Remote Desktop - User Mode (TCP-In)
+  - Enable the rule named "Remote Desktop - User Mode (TCP-In)"
   - If this rule does not exist, then create a new one: 
     - Right Click "Inbound Rules" and select "New Rule..."
       - Choose "Port"
@@ -173,7 +173,7 @@
 
 ![image](https://github.com/user-attachments/assets/5caacaad-70af-41e2-acb1-e5908d18fd30)
 
-- Lastly, name this host-based firewall rule (ideally something along the lines of Allow RDP
+- Lastly, name this host-based firewall rule (ideally something along the lines of "Allow RDP")
 
 ![image](https://github.com/user-attachments/assets/cbaafb9e-0f13-4f44-a133-c31ad486b660)
 
