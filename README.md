@@ -199,7 +199,7 @@
 <h3> STEP 1.7: Verify the GPO configurations </h3>
 
 - Login to the Domain Client VM as one of the created Non-admin users.
-  - One of my created users was "fapa.canuh" so I will login as this user to test the GPO deploment.
+  - One of my created users was "fapa.canuh" so I will login as this user to test the GPO deployment.
     - Remember the default password assigned to all these created users was "Password1" so use that to login
 
 ![image](https://github.com/user-attachments/assets/1d2a48c3-f052-4fc2-930c-43d8eb275739)
@@ -254,9 +254,8 @@
 
  - NOTE: It is more efficient to simply edit the "Default Domain Policy" as opposed to creating a new GPO for multiple reasons: 
    - It is automatically linked to our created domain (account lockout configurations and other authentication based events are domain wide operations)
-       - As opposed to authorizing users for Remote Desktop Access this is more of a client level operation and thus linking the previously created GPO to the OU containing all our Domain 
-          Clients was a more appropriate step to take.   
-   - It takes precedence over any created Group Policy Objects by default...it is the default domain policy after all(very appropriately named😉)
+       - As opposed to authorizing users for Remote Desktop access, which is more of a client-level operation and thus linking the previously created GPO to the OU containing all our Domain Clients was a more appropriate step to take.   
+   - It, by default, takes precedence over any created Group Policy Objects...it is the default domain policy after all (very aptly named😉)
        - Doing so will ensure consistent application across our entire domain and we will not risk it overriding a competing custom GPO that we would have created.
   
 - Right click the "Default Domain Policy" and select Edit
